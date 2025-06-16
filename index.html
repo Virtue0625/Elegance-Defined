@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elegance Defined Perfumes</title>
+  <style>
+    :root {
+      --bg: #fff;
+      --text: #222;
+      --teal: #001380;
+      --bg-dark: #121212;
+      --text-dark: #eee;
+      --bg-card: #f4f4f4;
+      --bg-card-dark: #1e1e1e;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.dark {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--teal);
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.3rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .toggle-btn {
+      background: #fff;
+      color: var(--teal);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: linear-gradient(to right, #09054d, #00124f);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    body.dark .feature-card {
+      background: var(--bg-card-dark);
+    }
+
+    .feature-card:hover {
+      transform: scale(1.02);
+    }
+
+    .feature-card img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000980;
+      color: #fff;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: var(--bg-card);
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 90%;
+      position: relative;
+      animation: fadeIn 0.3s;
+    }
+
+    body.dark .modal-content {
+      background: var(--bg-card-dark);
+    }
+
+    .modal-content input,
+    .modal-content select {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.7rem;
+      border: 1px solid var(--teal);
+      border-radius: 5px;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--teal);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  
+  </style>
+</head>
+<body onload="animateLogo()">
+  <!-- Logo and Nav -->
+  <nav>
+    <div class="logo" id="logo">
+      <img src="perfume logo.jpeg" alt="Logo" style="height: 50px; width: 50px; vertical-align: middle; border-radius: 8px; margin-right: 10px;">
+      Elegance Defined
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#collections">Our Collections</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </nav>
+  
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <h1 class="logo-name">Elegance Defined</h1>
+    <p>Luxury Nigerian Perfumes | Scent the Elegance</p>
+  </section>
+<!-- Our Collections Heading -->
+<section style="text-align: center; padding-top: 2rem;">
+  <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--teal);">Our Collections</h2>
+</section>
+
+<!-- Collections Section -->
+<section id="collections" class="features">
+  <!-- Product 1 to 200 -->
+  <!-- Each with a unique name, price, and image -->
+
+  <!-- Begin Cards -->
+
+  <!-- Products 1 to 200 -->
+  <!-- Auto-generated -->
+
+  <!-- Start -->
+
+  <!-- Loop through and generate each card -->
+  <!-- Generated using pattern: perfume[i].jpg, Name #{i}, ₦Price -->
+
+  <!-- Begin Entries -->
+
+  <div class="feature-card" onclick="openForm('Royal Oud', '₦20,000')">
+    <img src="perfume 1.jfif" alt="Royal Oud" />
+    <h3>Royal Oud</h3>
+    <p>₦20,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Velvet Bloom', '₦18,500')">
+    <img src="perfume 2.jfif" alt="Velvet Bloom" />
+    <h3>Velvet Bloom</h3>
+    <p>₦18,500</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Citrus Noir', '₦17,000')">
+    <img src="picture 3.jfif" alt="Citrus Noir" />
+    <h3>Citrus Noir</h3>
+    <p>₦17,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Amber Mist', '₦19,000')">
+    <img src="picture 4.jfif" alt="Amber Mist" />
+    <h3>Amber Mist</h3>
+    <p>₦19,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Naija Essence', '₦16,000')">
+    <img src="perfume 5.jfif" alt="Naija Essence" />
+    <h3>Naija Essence</h3>
+    <p>₦16,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Gold Spirit', '₦21,000')">
+    <img src="picture 6.jfif" alt="Gold Spirit" />
+    <h3>Gold Spirit</h3>
+    <p>₦21,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Midnight Grace', '₦18,000')">
+    <img src="perfume 7.jfif" alt="Midnight Grace" />
+    <h3>Midnight Grace</h3>
+    <p>₦18,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Sahara Blush', '₦19,500')">
+    <img src="picture 8.jfif" alt="Sahara Blush" />
+    <h3>Sahara Blush</h3>
+    <p>₦19,500</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Elegance Noir', '₦22,000')">
+    <img src="perfume 9.jfif" alt="Elegance Noir" />
+    <h3>Elegance Noir</h3>
+    <p>₦22,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Lush Harmony', '₦17,500')">
+    <img src="perfume 10.jfif" alt="Lush Harmony" />
+    <h3>Lush Harmony</h3>
+    <p>₦17,500</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Crimson Dew', '₦19,200')">
+    <img src="perfume 11.jfif" alt="Crimson Dew" />
+    <h3>Crimson Dew</h3>
+    <p>₦19,200</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Serenity Muse', '₦18,700')">
+    <img src="perfume 12.jfif" alt="Serenity Muse" />
+    <h3>Serenity Muse</h3>
+    <p>₦18,700</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Bliss Enigma', '₦20,500')">
+    <img src="perfume 13.jfif" alt="Bliss Enigma" />
+    <h3>Bliss Enigma</h3>
+    <p>₦20,500</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Ocean Ember', '₦21,300')">
+    <img src="perfume 14.jfif" alt="Ocean Ember" />
+    <h3>Ocean Ember</h3>
+    <p>₦21,300</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Twilight Bloom', '₦19,000')">
+    <img src="perfume 15.jfif" alt="Twilight Bloom" />
+    <h3>Twilight Bloom</h3>
+    <p>₦19,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Musk Whisper', '₦22,000')">
+    <img src="perfume 16.jfif" alt="Musk Whisper" />
+    <h3>Musk Whisper</h3>
+    <p>₦22,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Zest Mirage', '₦18,300')">
+    <img src="perfume 17.jfif" alt="Zest Mirage" />
+    <h3>Zest Mirage</h3>
+    <p>₦18,300</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Pearl Shadow', '₦20,800')">
+    <img src="perfume 18.jpeg" alt="Pearl Shadow" />
+    <h3>Pearl Shadow</h3>
+    <p>₦20,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Jade Whisper', '₦17,600')">
+    <img src="perfume 19.jpeg" alt="Jade Whisper" />
+    <h3>Jade Whisper</h3>
+    <p>₦17,600</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Ruby Trail', '₦21,900')">
+    <img src="perfume 20.jpeg" alt="Ruby Trail" />
+    <h3>Ruby Trail</h3>
+    <p>₦21,900</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Floral Beam', '₦19,800')">
+    <img src="perfume 21.jpeg" alt="Floral Beam" />
+    <h3>Floral Beam</h3>
+    <p>₦19,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Noir Essence', '₦20,600')">
+    <img src="perfume 22.jpeg" alt="Noir Essence" />
+    <h3>Noir Essence</h3>
+    <p>₦20,600</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Golden Whiff', '₦21,400')">
+    <img src="perfume 23.jpeg" alt="Golden Whiff" />
+    <h3>Golden Whiff</h3>
+    <p>₦21,400</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Bloom Spirit', '₦18,400')">
+    <img src="perfume 24.jpeg" alt="Bloom Spirit" />
+    <h3>Bloom Spirit</h3>
+    <p>₦18,400</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Whisper Leaf', '₦17,900')">
+    <img src="perfume 25.jpeg" alt="Whisper Leaf" />
+    <h3>Whisper Leaf</h3>
+    <p>₦17,900</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Sunset Veil', '₦22,300')">
+    <img src="perfume 26.jpeg" alt="Sunset Veil" />
+    <h3>Sunset Veil</h3>
+    <p>₦22,300</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Amber Bloom', '₦19,600')">
+    <img src="perfume 27.jpeg" alt="Amber Bloom" />
+    <h3>Amber Bloom</h3>
+    <p>₦19,600</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Forest Edge', '₦21,100')">
+    <img src="perfume 28.jpeg" alt="Forest Edge" />
+    <h3>Forest Edge</h3>
+    <p>₦21,100</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Cloud Whisper', '₦18,900')">
+    <img src="perfume 29.jpeg" alt="Cloud Whisper" />
+    <h3>Cloud Whisper</h3>
+    <p>₦18,900</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Night Silk', '₦20,200')">
+    <img src="perfume 30.jpeg" alt="Night Silk" />
+    <h3>Night Silk</h3>
+    <p>₦20,200</p>
+  </div>
+ <div class="feature-card" onclick="openForm('Cocoa Dusk', '₦21,700')">
+    <img src="perfume 31.jpeg" alt="Cocoa Dusk" />
+    <h3>Cocoa Dusk</h3>
+    <p>₦21,700</p>
+  </div> 
+  <div class="feature-card" onclick="openForm('Mystic Rain', '₦18,800')">
+    <img src="perfume 32.jpeg" alt="Mystic Rain" />
+    <h3>Mystic Rain</h3>
+    <p>₦18,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Opal Flame', '₦22,100')">
+    <img src="perfume 33.jpeg" alt="Opal Flame" />
+    <h3>Opal Flame</h3>
+    <p>₦22,100</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Sapphire Drift', '₦19,300')">
+    <img src="perfume 34.jpeg" alt="Sapphire Drift" />
+    <h3>Sapphire Drift</h3>
+    <p>₦19,300</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Lime Twist', '₦17,800')">
+    <img src="perfume 35.jpeg" alt="Lime Twist" />
+    <h3>Lime Twist</h3>
+    <p>₦17,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Berry Lush', '₦20,700')">
+    <img src="perfume 36.jpeg" alt="Berry Lush" />
+    <h3>Berry Lush</h3>
+    <p>₦20,700</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Cedar Pulse', '₦18,200')">
+    <img src="perfume 37.jpeg" alt="Cedar Pulse" />
+    <h3>Cedar Pulse</h3>
+    <p>₦18,200</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Orchid Shine', '₦21,800')">
+    <img src="perfume  38.jpeg" alt="Orchid Shine" />
+    <h3>Orchid Shine</h3>
+    <p>₦21,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Citrus Bling', '₦19,900')">
+    <img src="perfume 39.jpeg" alt="Citrus Bling" />
+    <h3>Citrus Bling</h3>
+    <p>₦19,900</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Rose Quartz', '₦22,500')">
+    <img src="perfume 40.jpeg" alt="Rose Quartz" />
+    <h3>Rose Quartz</h3>
+    <p>₦22,500</p>
+  </div>
+    <div class="feature-card" onclick="openForm('Mystic Aura', '₦20,900')">
+    <img src="perfume 41.jpeg" alt="Mystic Aura" />
+    <h3>Mystic Aura</h3>
+    <p>₦20,900</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Ivory Petal', '₦19,100')">
+    <img src="perfume 42.jpeg" alt="Ivory Petal" />
+    <h3>Ivory Petal</h3>
+    <p>₦19,100</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Urban Spice', '₦21,600')">
+    <img src="perfume 43.jpeg" alt="Urban Spice" />
+    <h3>Urban Spice</h3>
+    <p>₦21,600</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Velvet Night', '₦18,200')">
+    <img src="perfume 44.jpeg" alt="Velvet Night" />
+    <h3>Velvet Night</h3>
+    <p>₦18,200</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Ocean Frost', '₦20,100')">
+    <img src="perfume 45.jpeg" alt="Ocean Frost" />
+    <h3>Ocean Frost</h3>
+    <p>₦20,100</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Royal Blush', '₦22,700')">
+    <img src="perfume 46.jpeg" alt="Royal Blush" />
+    <h3>Royal Blush</h3>
+    <p>₦22,700</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Fresh Desire', '₦19,400')">
+    <img src="perfume 47.jpeg" alt="Fresh Desire" />
+    <h3>Fresh Desire</h3>
+    <p>₦19,400</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Cinnamon Rush', '₦21,200')">
+    <img src="perfume 48.jpeg" alt="Cinnamon Rush" />
+    <h3>Cinnamon Rush</h3>
+    <p>₦21,200</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Island Bloom', '₦20,400')">
+    <img src="perfume 49.jpeg" alt="Island Bloom" />
+    <h3>Island Bloom</h3>
+    <p>₦20,400</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Exotic Charm', '₦22,200')">
+    <img src="perfume 50.jpeg" alt="Exotic Charm" />
+    <h3>Exotic Charm</h3>
+    <p>₦22,200</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Sunset Whisper', '₦21,800')">
+    <img src="perfume 51.jpeg" alt="Sunset Whisper" />
+    <h3>Sunset Whisper</h3>
+    <p>₦21,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Crimson Velvet', '₦23,300')">
+    <img src="perfume 52.jpeg" alt="Crimson Velvet" />
+    <h3>Crimson Velvet</h3>
+    <p>₦23,300</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Golden Orchid', '₦19,900')">
+    <img src="perfume 53.jpeg" alt="Golden Orchid" />
+    <h3>Golden Orchid</h3>
+    <p>₦19,900</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Dream Petals', '₦20,500')">
+    <img src="perfume 54.jpeg" alt="Dream Petals" />
+    <h3>Dream Petals</h3>
+    <p>₦20,500</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Cedar Flame', '₦18,700')">
+    <img src="perfume 55.jpeg" alt="Cedar Flame" />
+    <h3>Cedar Flame</h3>
+    <p>₦18,700</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Tranquil Mist', '₦22,300')">
+    <img src="perfume 56.jpeg" alt="Tranquil Mist" />
+    <h3>Tranquil Mist</h3>
+    <p>₦22,300</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Dark Petal', '₦21,000')">
+    <img src="perfume 57.jpeg" alt="Dark Petal" />
+    <h3>Dark Petal</h3>
+    <p>₦21,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Golden Breeze', '₦20,800')">
+    <img src="perfume 58.jpeg" alt="Golden Breeze" />
+    <h3>Golden Breeze</h3>
+    <p>₦20,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Serene Amber', '₦19,200')">
+    <img src="perfume 59.jpeg" alt="Serene Amber" />
+    <h3>Serene Amber</h3>
+    <p>₦19,200</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Pink Mirage', '₦22,000')">
+    <img src="perfume 60.jpeg" alt="Pink Mirage" />
+    <h3>Pink Mirage</h3>
+    <p>₦22,000</p>
+  </div>
+    <div class="feature-card" onclick="openForm('Twilight Silk', '₦21,400')">
+    <img src="perfume 61.jpeg" alt="Twilight Silk" />
+    <h3>Twilight Silk</h3>
+    <p>₦21,400</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Ivory Flame', '₦20,300')">
+    <img src="perfume 62.jpeg" alt="Ivory Flame" />
+    <h3>Ivory Flame</h3>
+    <p>₦20,300</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Mystic Blush', '₦19,600')">
+    <img src="perfume 63.jpeg" alt="Mystic Blush" />
+    <h3>Mystic Blush</h3>
+    <p>₦19,600</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Royal Dew', '₦22,100')">
+    <img src="perfume 64.jpeg" alt="Royal Dew" />
+    <h3>Royal Dew</h3>
+    <p>₦22,100</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Golden Spice', '₦18,900')">
+    <img src="perfume 65.jpeg" alt="Golden Spice" />
+    <h3>Golden Spice</h3>
+    <p>₦18,900</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Lavender Smoke', '₦21,700')">
+    <img src="perfume 66.jpeg" alt="Lavender Smoke" />
+    <h3>Lavender Smoke</h3>
+    <p>₦21,700</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Pure Breeze', '₦20,000')">
+    <img src="perfume 67.jpeg" alt="Pure Breeze" />
+    <h3>Pure Breeze</h3>
+    <p>₦20,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Rose Ember', '₦19,800')">
+    <img src="perfume 68.jpeg" alt="Rose Ember" />
+    <h3>Rose Ember</h3>
+    <p>₦19,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Moonlit Bloom', '₦22,400')">
+    <img src="perfume 68.jpeg" alt="Moonlit Bloom" />
+    <h3>Moonlit Bloom</h3>
+    <p>₦22,400</p>
+  </div>
+<div class="feature-card" onclick="openForm('Moonlit Bloom', '₦22,400')">
+   <img src="perfume 69.jpeg" alt=" sunsplach" />
+   <h3>sunsplach</h3>
+   <p>#10,500</p>
+   </div>
+  <div class="feature-card" onclick="openForm('Scarlet Whisper', '₦21,500')">
+    <img src="perfume 70.jpeg" alt="Scarlet Whisper" />
+    <h3>Scarlet Whisper</h3>
+    <p>₦21,500</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Crimson Aurora', '₦23,000')">
+    <img src="perfume 71.jpeg" alt="Crimson Aurora" />
+    <h3>Crimson Aurora</h3>
+    <p>₦23,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Jade Mirage', '₦20,800')">
+    <img src="perfume 72.jpeg" alt="Jade Mirage" />
+    <h3>Jade Mirage</h3>
+    <p>₦20,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Sapphire Whisper', '₦21,300')">
+    <img src="perfume 73.jpeg" alt="Sapphire Whisper" />
+    <h3>Sapphire Whisper</h3>
+    <p>₦21,300</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Velvet Rain', '₦19,900')">
+    <img src="perfume 74.jpeg" alt="Velvet Rain" />
+    <h3>Velvet Rain</h3>
+    <p>₦19,900</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Ocean Bloom', '₦20,500')">
+    <img src="perfume 75.jpeg" alt="Ocean Bloom" />
+    <h3>Ocean Bloom</h3>
+    <p>₦20,500</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Sunset Reverie', '₦22,600')">
+    <img src="perfume 76.jpeg" alt="Sunset Reverie" />
+    <h3>Sunset Reverie</h3>
+    <p>₦22,600</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Golden Mirage', '₦21,100')">
+    <img src="perfume 77.jpeg" alt="Golden Mirage" />
+    <h3>Golden Mirage</h3>
+    <p>₦21,100</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Berry Haze', '₦20,200')">
+    <img src="perfume 78.jpeg" alt="Berry Haze" />
+    <h3>Berry Haze</h3>
+    <p>₦20,200</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Opal Wind', '₦22,800')">
+    <img src="perfume 79.jpeg" alt="Opal Wind" />
+    <h3>Opal Wind</h3>
+    <p>₦22,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Floral Eclipse', '₦19,700')">
+    <img src="perrfume 80.jpeg" alt="Floral Eclipse" />
+    <h3>Floral Eclipse</h3>
+    <p>₦19,700</p>
+  </div>
+  <div class="feature-card"onclick="openForm('whsik', '₦20,000')">
+     <img src="perfume 81.jpeg" alt="whsik" />
+     <h3>whsik</h3>
+     <p>#12,000</p>
+     </div>
+ <div class="feature-card"onclick="openForm('Love', '₦20,000')">
+   <img src="perfume 82.jpeg" alt="Love" />
+   <h3>Love</h3>
+   <p>#14,500</p>
+   </div>
+   <div class="feature-card"onclick="openForm('optimum spray', '#13,500')">
+    <img src="perfume 83.jpeg" alt="optimum spray"/>
+    <h3>optimum spray</h3>
+    <p>313,500</p>
+    </div>
+  <div class="feature-card"onclick="openForm(Dark musk', #10,500')">
+    <img src="perfume 84.jpeg" alt="Dark musk"/>
+    <h3>Dark musk</h3>
+    <p>310,500</p>
+  </div>
+  <div class="feature-card"onclick="openform(Velvet musk', #15,800')">
+    <img src="perfume 85.jpeg" alt="Velvet musk"/>
+    <h3>Velvet musk</h3>
+    <p>#15,800</p>
+    </div>
+ <div class="feature-card"onclick="openForm(Flawless splash', #16,500)">
+  <img src="perfume 86.jpeg" alt="Flawless splash"/>
+  <h3>Flawless splash</h3>
+  <p>#16,500</p>
+  </div>
+  <div class="feature-card"onclick="openFrom(kiss addiction', #17,500)">
+    <img src="perfume 87.jpeg" alt="kiss addiction"/>
+    <h3>kiss addiction</h3>
+    <p>#17,500</p>
+    </div>
+ <div class="feature-card"onclick="openform(Timeless flaw', #13,600)">
+  <img src="perfume 88.jpeg" alt="Timeless flaw"/>
+  <h3>Timeless flaw</h3>
+  <p>#13,600</p>
+  </div>
+  <div class="feature-card"onclick="openForm(petal musk', #12,600)">
+    <img src="perfume 89.jpeg" alt="Petal musk"/>
+    <h3>Petal musk</h3>
+    <p>#12,600</p>
+    </div>
+   <div class="feature-card"onclick="openForm(Slay flawlessly', #20,000)">
+    <img src="perfume 90.jpeg" alt="Slay flawlessly"/>
+    <h3>Slay flawlessly</h3>
+    <p>#20,000</p>
+    </div> 
+    <div class="feature-card" onclick="openForm('Gloden Musk', '₦20,800')">
+    <img src="perfume 91.jpeg" alt="Golden Muse" />
+    <h3>Golden Musk</h3>
+    <p>₦20,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Twilight Dream', '₦21,500')">
+    <img src="perfume 92.jpeg" alt="Twilight Dream" />
+    <h3>Twilight Dream</h3>
+    <p>₦21,500</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Jade Whisper', '₦22,300')">
+    <img src="perfume 93.jpeg" alt="Jade Whisper" />
+    <h3>Jade Whisper</h3>
+    <p>₦22,300</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Mystic Bloom', '₦20,900')">
+    <img src="perfume 94.jpeg" alt="Mystic Bloom" />
+    <h3>Mystic Bloom</h3>
+    <p>₦20,900</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Ocean Silk', '₦19,700')">
+    <img src="perfume 95.jpeg" alt="Ocean Silk" />
+    <h3>Ocean Silk</h3>
+    <p>₦19,700</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Lunar Petal', '₦21,100')">
+    <img src="perfume 96.jpeg" alt="Lunar Petal" />
+    <h3>Lunar Petal</h3>
+    <p>₦21,100</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Rose Mirage', '₦20,200')">
+    <img src="perfume 97.jpeg" alt="Rose Mirage" />
+    <h3>Rose Mirage</h3>
+    <p>₦20,200</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Velvet Grace', '₦22,400')">
+    <img src="perfume 98.jpeg" alt="Velvet Grace" />
+    <h3>Velvet Grace</h3>
+    <p>₦22,400</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Morning Ember', '₦19,800')">
+    <img src="perfume 99.jpeg" alt="Morning Ember" />
+    <h3>Morning Ember</h3>
+    <p>₦19,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Dusk Bloom', '₦20,300')">
+    <img src="perfume 100.jpeg" alt="Dusk Bloom" />
+    <h3>Dusk Bloom</h3>
+    <p>₦20,300</p>
+  </div>
+   <div class="feature-card" onclick="openForm('Crystal Rain', '₦21,700')">
+    <img src="perfume 101.jpeg" alt="Crystal Rain" />
+    <h3>Crystal Rain</h3>
+    <p>₦21,700</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Midnight Bloom', '₦20,500')">
+    <img src="perfume 102.jpeg" alt="Midnight Bloom" />
+    <h3>Midnight Bloom</h3>
+    <p>₦20,500</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Sapphire Kiss', '₦22,800')">
+    <img src="perfume 103.jpeg" alt="Sapphire Kiss" />
+    <h3>Sapphire Kiss</h3>
+    <p>₦22,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Rose Dusk', '₦19,900')">
+    <img src="perfume 104.jpeg" alt="Rose Dusk" />
+    <h3>Rose Dusk</h3>
+    <p>₦19,900</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Twilight Gold', '₦21,000')">
+    <img src="perfume 105.jpeg" alt="Twilight Gold" />
+    <h3>Twilight Gold</h3>
+    <p>₦21,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Petal Essence', '₦20,100')">
+    <img src="perfume 106.jpeg" alt="Petal Essence" />
+    <h3>Petal Essence</h3>
+    <p>₦20,100</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Moon Glow', '₦22,600')">
+    <img src="perfume 107.jpeg" alt="Moon Glow" />
+    <h3>Moon Glow</h3>
+    <p>₦22,600</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Velvet Dusk', '₦21,900')">
+    <img src="perfume 108.jpeg" alt="Velvet Dusk" />
+    <h3>Velvet Dusk</h3>
+    <p>₦21,900</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Golden Petals', '₦19,600')">
+    <img src="perfume 109.jpeg" alt="Golden Petals" />
+    <h3>Golden Petals</h3>
+    <p>₦19,600</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Cedar Breeze', '₦20,900')">
+    <img src="perfume 110.jpeg" alt="Cedar Breeze" />
+    <h3>Cedar Breeze</h3>
+    <p>₦20,900</p>
+  </div>
+    <div class="feature-card" onclick="openForm('Ocean Drift', '₦21,300')">
+    <img src="perfume 111.jpeg" alt="Ocean Drift" />
+    <h3>Ocean Drift</h3>
+    <p>₦21,300</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Lily Spark', '₦20,800')">
+    <img src="perfume 112.jpeg" alt="Lily Spark" />
+    <h3>Lily Spark</h3>
+    <p>₦20,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Opal Charm', '₦23,200')">
+    <img src="perfume 113.jpeg" alt="Opal Charm" />
+    <h3>Opal Charm</h3>
+    <p>₦23,200</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Blush Rain', '₦19,400')">
+    <img src="perfume 114.jpeg" alt="Blush Rain" />
+    <h3>Blush Rain</h3>
+    <p>₦19,400</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Silken Rose', '₦21,200')">
+    <img src="perfume 115.jpeg" alt="Silken Rose" />
+    <h3>Silken Rose</h3>
+    <p>₦21,200</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Citrus Dream', '₦20,300')">
+    <img src="perfume 116.jpeg" alt="Citrus Dream" />
+    <h3>Citrus Dream</h3>
+    <p>₦20,300</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Evening Charm', '₦22,000')">
+    <img src="perfume 117.jpeg" alt="Evening Charm" />
+    <h3>Evening Charm</h3>
+    <p>₦22,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Musk Flame', '₦21,600')">
+    <img src="perfume 118.jpeg" alt="Musk Flame" />
+    <h3>Musk Flame</h3>
+    <p>₦21,600</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Amber Skies', '₦19,800')">
+    <img src="perfume 119.jpeg" alt="Amber Skies" />
+    <h3>Amber Skies</h3>
+    <p>₦19,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Floral Surge', '₦20,600')">
+    <img src="perfume 120.jpeg" alt="Floral Surge" />
+    <h3>Floral Surge</h3>
+    <p>₦20,600</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Cherry Velvet', '₦21,500')">
+    <img src="perfume 121.jpeg" alt="Cherry Velvet" />
+    <h3>Cherry Velvet</h3>
+    <p>₦21,500</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Spiced Amber', '₦22,300')">
+    <img src="perfume 122.jpeg" alt="Spiced Amber" />
+    <h3>Spiced Amber</h3>
+    <p>₦22,300</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Lemon Drift', '₦20,700')">
+    <img src="perfume 123.jpeg" alt="Lemon Drift" />
+    <h3>Lemon Drift</h3>
+    <p>₦20,700</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Jasmine Muse', '₦23,100')">
+    <img src="perfume 124.jpeg" alt="Jasmine Muse" />
+    <h3>Jasmine Muse</h3>
+    <p>₦23,100</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Rose Ember', '₦21,800')">
+    <img src="perfume 125.jpeg" alt="Rose Ember" />
+    <h3>Rose Ember</h3>
+    <p>₦21,800</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Cocoa Whisper', '₦20,600')">
+    <img src="perfume 126.jpeg" alt="Cocoa Whisper" />
+    <h3>Cocoa Whisper</h3>
+    <p>₦20,600</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Lavender Silk', '₦22,400')">
+    <img src="perfume 127.jpeg" alt="Lavender Silk" />
+    <h3>Lavender Silk</h3>
+    <p>₦22,400</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Mystic Scent', '₦21,900')">
+    <img src="perfume 128.jpeg" alt="Mystic Scent" />
+    <h3>Mystic Scent</h3>
+    <p>₦21,900</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Citrus Ember', '₦20,000')">
+    <img src="perfume 129.jpeg" alt="Citrus Ember" />
+    <h3>Citrus Ember</h3>
+    <p>₦20,000</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Berry Twilight', '₦19,700')">
+    <img src="perfume 130.jpeg" alt="Berry Twilight" />
+    <h3>Berry Twilight</h3>
+    <p>₦19,700</p>
+  </div>
+  <div class="feature-card" onclick="openForm('Amber Bloom', '₦19,900')">
+  <img src="perfume 131.jpeg" alt="Amber Bloom" />
+  <h3>Amber Bloom</h3>
+  <p>₦19,900</p>
+</div>
+<div class="feature-card" onclick="openForm('Vanilla Rain', '₦21,200')">
+  <img src="perfume 132.jpeg" alt="Vanilla Rain" />
+  <h3>Vanilla Rain</h3>
+  <p>₦21,200</p>
+</div>
+<div class="feature-card" onclick="openForm('Golden Sunset', '₦22,800')">
+  <img src="perfume 133.jpeg" alt="Golden Sunset" />
+  <h3>Golden Sunset</h3>
+  <p>₦22,800</p>
+</div>
+<div class="feature-card" onclick="openForm('Pearl Essence', '₦20,900')">
+  <img src="perfume 134.jpeg" alt="Pearl Essence" />
+  <h3>Pearl Essence</h3>
+  <p>₦20,900</p>
+</div>
+<div class="feature-card" onclick="openForm('Ocean Kiss', '₦21,300')">
+  <img src="perfume 135.jpeg" alt="Ocean Kiss" />
+  <h3>Ocean Kiss</h3>
+  <p>₦21,300</p>
+</div>
+<div class="feature-card" onclick="openForm('Night Orchid', '₦23,000')">
+  <img src="perfume136.jpg" alt="Night Orchid" />
+  <h3>Night Orchid</h3>
+  <p>₦23,000</p>
+</div>
+<div class="feature-card" onclick="openForm('Silken Dream', '₦22,600')">
+  <img src="perfume 137.jpeg" alt="Silken Dream" />
+  <h3>Silken Dream</h3>
+  <p>₦22,600</p>
+</div>
+<div class="feature-card" onclick="openForm('Mint Mirage', '₦20,500')">
+  <img src="perfume 138.jpeg" alt="Mint Mirage" />
+  <h3>Mint Mirage</h3>
+  <p>₦20,500</p>
+</div>
+<div class="feature-card" onclick="openForm('Velvet Rush', '₦21,700')">
+  <img src="perfume 139.jpeg" alt="Velvet Rush" />
+  <h3>Velvet Rush</h3>
+  <p>₦21,700</p>
+</div>
+<div class="feature-card" onclick="openForm('Berry Twilight', '₦19,700')">
+  <img src="perfume 140.jpeg" alt="Berry Twilight" />
+  <h3>Berry Twilight</h3>
+  <p>₦19,700</p>
+</div>
+<div class="feature-card" onclick="openForm('Desert Rose', '₦20,800')">
+  <img src="perfume 141.jpeg" alt="Desert Rose" />
+  <h3>Desert Rose</h3>
+  <p>₦20,800</p>
+</div>
+<div class="feature-card" onclick="openForm('Moonlit Glow', '₦23,300')">
+  <img src="perfume 142.jpeg" alt="Moonlit Glow" />
+  <h3>Moonlit Glow</h3>
+  <p>₦23,300</p>
+</div>
+<div class="feature-card" onclick="openForm('Wild Petals', '₦21,400')">
+  <img src="perfume 143.jpeg" alt="Wild Petals" />
+  <h3>Wild Petals</h3>
+  <p>₦21,400</p>
+</div>
+<div class="feature-card" onclick="openForm('Orchid Noir', '₦22,700')">
+  <img src="perfume 144.jpeg" alt="Orchid Noir" />
+  <h3>Orchid Noir</h3>
+  <p>₦22,700</p>
+</div>
+<div class="feature-card" onclick="openForm('Petal Frost', '₦19,500')">
+  <img src="perfume 145.jpeg" alt="Petal Frost" />
+  <h3>Petal Frost</h3>
+  <p>₦19,500</p>
+</div>
+<div class="feature-card" onclick="openForm('Cedar Blush', '₦20,300')">
+  <img src="perfume 146.jpeg" alt="Cedar Blush" />
+  <h3>Cedar Blush</h3>
+  <p>₦20,300</p>
+</div>
+<div class="feature-card" onclick="openForm('Twilight Fern', '₦21,900')">
+  <img src="perfume 147.jpeg" alt="Twilight Fern" />
+  <h3>Twilight Fern</h3>
+  <p>₦21,900</p>
+</div>
+<div class="feature-card" onclick="openForm('Silk Garden', '₦22,000')">
+  <img src="perfume 148.jpeg" alt="Silk Garden" />
+  <h3>Silk Garden</h3>
+  <p>₦22,000</p>
+</div>
+<div class="feature-card" onclick="openForm('Iris Smoke', '₦20,400')">
+  <img src="perfume 149.jpeg" alt="Iris Smoke" />
+  <h3>Iris Smoke</h3>
+  <p>₦20,400</p>
+</div>
+<div class="feature-card" onclick="openForm('Jade Breeze', '₦21,000')">
+  <img src="perfume 150.jpeg" alt="Jade Breeze" />
+  <h3>Jade Breeze</h3>
+  <p>₦21,000</p>
+</div>
+<div class="feature-card" onclick="openForm('Amber Silk', '₦20,900')">
+  <img src="perfume 151.jpeg" alt="Amber Silk" />
+  <h3>Amber Silk</h3>
+  <p>₦20,900</p>
+</div>
+<div class="feature-card" onclick="openForm('Rose Quartz', '₦22,200')">
+  <img src="perfume 152.jpeg" alt="Rose Quartz" />
+  <h3>Rose Quartz</h3>
+  <p>₦22,200</p>
+</div>
+<div class="feature-card" onclick="openForm('Sapphire Mist', '₦23,500')">
+  <img src="perfume 153.jpeg" alt="Sapphire Mist" />
+  <h3>Sapphire Mist</h3>
+  <p>₦23,500</p>
+</div>
+<div class="feature-card" onclick="openForm('Coral Nights', '₦21,600')">
+  <img src="perfume 154.jpeg" alt="Coral Nights" />
+  <h3>Coral Nights</h3>
+  <p>₦21,600</p>
+</div>
+<div class="feature-card" onclick="openForm('Ivory Petals', '₦20,300')">
+  <img src="perfume 155.jpeg" alt="Ivory Petals" />
+  <h3>Ivory Petals</h3>
+  <p>₦20,300</p>
+</div>
+<div class="feature-card" onclick="openForm('Ruby Whisper', '₦22,000')">
+  <img src="perfume 156.jpeg" alt="Ruby Whisper" />
+  <h3>Ruby Whisper</h3>
+  <p>₦22,000</p>
+</div>
+<div class="feature-card" onclick="openForm('Citrus Kiss', '₦19,800')">
+  <img src="perfume 157.jpeg" alt="Citrus Kiss" />
+  <h3>Citrus Kiss</h3>
+  <p>₦19,800</p>
+</div>
+<div class="feature-card" onclick="openForm('Golden Dusk', '₦21,100')">
+  <img src="perfume 158.jpeg" alt="Golden Dusk" />
+  <h3>Golden Dusk</h3>
+  <p>₦21,100</p>
+</div>
+<div class="feature-card" onclick="openForm('Vanilla Spark', '₦20,500')">
+  <img src="perfume 159.jpeg" alt="Vanilla Spark" />
+  <h3>Vanilla Spark</h3>
+  <p>₦20,500</p>
+</div>
+<div class="feature-card" onclick="openForm('Shadow Bloom', '₦23,100')">
+  <img src="perfume 160.jpeg" alt="Shadow Bloom" />
+  <h3>Shadow Bloom</h3>
+  <p>₦23,100</p>
+</div>
+<div class="feature-card" onclick="openForm('Twilight Amber', '₦21,800')">
+  <img src="perfume 161.jpeg" alt="Twilight Amber" />
+  <h3>Twilight Amber</h3>
+  <p>₦21,800</p>
+</div>
+<div class="feature-card" onclick="openForm('Ocean Frost', '₦20,600')">
+  <img src="perfume 162.jpeg" alt="Ocean Frost" />
+  <h3>Ocean Frost</h3>
+  <p>₦20,600</p>
+</div>
+<div class="feature-card" onclick="openForm('Midnight Silk', '₦22,500')">
+  <img src="perfume 163.jpeg" alt="Midnight Silk" />
+  <h3>Midnight Silk</h3>
+  <p>₦22,500</p>
+</div>
+<div class="feature-card" onclick="openForm('Lily Flame', '₦19,900')">
+  <img src="perfume 164.jpeg" alt="Lily Flame" />
+  <h3>Lily Flame</h3>
+  <p>₦19,900</p>
+</div>
+<div class="feature-card" onclick="openForm('Cocoa Rose', '₦21,400')">
+  <img src="perfume 165.jpeg" alt="Cocoa Rose" />
+  <h3>Cocoa Rose</h3>
+  <p>₦21,400</p>
+</div>
+<div class="feature-card" onclick="openForm('Peach Night', '₦20,800')">
+  <img src="perfume 166.jpeg" alt="Peach Night" />
+  <h3>Peach Night</h3>perfume 166.jpeg
+  <p>₦20,800</p>
+</div>
+<div class="feature-card" onclick="openForm('Dream Blush', '₦22,700')">
+  <img src="perfume 167.jpeg" alt="Dream Blush" />
+  <h3>Dream Blush</h3>
+  <p>₦22,700</p>
+</div>
+<div class="feature-card" onclick="openForm('Cedar Wind', '₦21,200')">
+  <img src="perfume 168.jpeg" alt="Cedar Wind" />
+  <h3>Cedar Wind</h3>
+  <p>₦21,200</p>
+</div>
+<div class="feature-card" onclick="openForm('Pink Mirage', '₦23,400')">
+  <img src="perfume 169.jpeg" alt="Pink Mirage" />
+  <h3>Pink Mirage</h3>
+  <p>₦23,400</p>
+</div>
+<div class="feature-card" onclick="openForm('Spice Bloom', '₦19,700')">
+  <img src="perfume 170.jpeg" alt="Spice Bloom" />
+  <h3>Spice Bloom</h3>
+  <p>₦19,700</p>
+</div>
+<div class="feature-card" onclick="openForm('Rose Drift', '₦20,900')">
+  <img src="perfume 171.jpeg" alt="Rose Drift" />
+  <h3>Rose Drift</h3>
+  <p>₦20,900</p>
+</div>
+<div class="feature-card" onclick="openForm('Mystic Dawn', '₦22,100')">
+  <img src="perfume 172.jpeg" alt="Mystic Dawn" />
+  <h3>Mystic Dawn</h3>
+  <p>₦22,100</p>
+</div>
+<div class="feature-card" onclick="openForm('Velvet Bloom', '₦21,300')">
+  <img src="perfume 173.jpeg" alt="Velvet Bloom" />
+  <h3>Velvet Bloom</h3>
+  <p>₦21,300</p>
+</div>
+<div class="feature-card" onclick="openForm('Snow Petals', '₦20,200')">
+  <img src="perfume 174.jpeg" alt="Snow Petals" />
+  <h3>Snow Petals</h3>
+  <p>₦20,200</p>
+</div>
+<div class="feature-card" onclick="openForm('Berry Flame', '₦22,900')">
+  <img src="perfume 175.jpeg" alt="Berry Flame" />
+  <h3>Berry Flame</h3>
+  <p>₦22,900</p>
+</div>
+<div class="feature-card" onclick="openForm('Sunset Silk', '₦21,000')">
+  <img src="perfume 176.jpeg" alt="Sunset Silk" />
+  <h3>Sunset Silk</h3>
+  <p>₦21,000</p>
+</div>
+<div class="feature-card" onclick="openForm('Wild Dusk', '₦20,700')">
+  <img src="perfume 177.jpeg" alt="Wild Dusk" />
+  <h3>Wild Dusk</h3>
+  <p>₦20,700</p>
+</div>
+<div class="feature-card" onclick="openForm('Lemon Bloom', '₦23,200')">
+  <img src="perfume 178.jpeg" alt="Lemon Bloom" />
+  <h3>Lemon Bloom</h3>
+  <p>₦23,200</p>
+</div>
+<div class="feature-card" onclick="openForm('Cherry Silk', '₦21,100')">
+  <img src="perfume 179.jpeg" alt="Cherry Silk" />
+  <h3>Cherry Silk</h3>
+  <p>₦21,100</p>
+</div>
+<div class="feature-card" onclick="openForm('Golden Flame', '₦22,600')">
+  <img src="perfume 180.jpeg" alt="Golden Flame" />
+  <h3>Golden Flame</h3>
+  <p>₦22,600</p>
+</div>
+<div class="feature-card" onclick="openForm('Fresh Orchid', '₦20,300')">
+  <img src="perfume 181.jpeg" alt="Fresh Orchid" />
+  <h3>Fresh Orchid</h3>
+  <p>₦20,300</p>
+</div>
+<div class="feature-card" onclick="openForm('Icy Rose', '₦21,900')">
+  <img src="perfume 182.jpeg" alt="Icy Rose" />
+  <h3>Icy Rose</h3>
+  <p>₦21,900</p>
+</div>
+<div class="feature-card" onclick="openForm('Citrus Charm', '₦19,600')">
+  <img src="perfume 183.jpeg" alt="Citrus Charm" />
+  <h3>Citrus Charm</h3>
+  <p>₦19,600</p>
+</div>
+<div class="feature-card" onclick="openForm('Velvet Ice', '₦23,300')">
+  <img src="perfume 184.jpeg" alt="Velvet Ice" />
+  <h3>Velvet Ice</h3>
+  <p>₦23,300</p>
+</div>
+<div class="feature-card" onclick="openForm('Moon Frost', '₦21,500')">
+  <img src="perfume 185.jpeg" alt="Moon Frost" />
+  <h3>Moon Frost</h3>
+  <p>₦21,500</p>
+</div>
+<div class="feature-card" onclick="openForm('Iris Bloom', '₦22,100')">
+  <img src="perfume 186.jpeg" alt="Iris Bloom" />
+  <h3>Iris Bloom</h3>
+  <p>₦22,100</p>
+</div>
+<div class="feature-card" onclick="openForm('Lavender Ember', '₦20,100')">
+  <img src="perfume 187.jpeg" alt="Lavender Ember" />
+  <h3>Lavender Ember</h3>
+  <p>₦20,100</p>
+</div>
+<div class="feature-card" onclick="openForm('Silken Petals', '₦21,700')">
+  <img src="perfume 188.jpeg" alt="Silken Petals" />
+  <h3>Silken Petals</h3>
+  <p>₦21,700</p>
+</div>
+<div class="feature-card" onclick="openForm('Blush Harmony', '₦20,000')">
+  <img src="perfume 189.jpeg" alt="Blush Harmony" />
+  <h3>Blush Harmony</h3>
+  <p>₦20,000</p>
+</div>
+<div class="feature-card" onclick="openForm('Opal Flame', '₦22,800')">
+  <img src="perfume 190.jpeg" alt="Opal Flame" />
+  <h3>Opal Flame</h3>
+  <p>₦22,800</p>
+</div>
+<div class="feature-card" onclick="openForm('Peony Shine', '₦21,000')">
+  <img src="perfume 191.jpeg" alt="Peony Shine" />
+  <h3>Peony Shine</h3>
+  <p>₦21,000</p>
+</div>
+<div class="feature-card" onclick="openForm('Jade Glow', '₦23,000')">
+  <img src="perfume 192.jpeg" alt="Jade Glow" />
+  <h3>Jade Glow</h3>
+  <p>₦23,000</p>
+</div>
+<div class="feature-card" onclick="openForm('Crystal Bloom', '₦22,200')">
+  <img src="perfume 193.jpeg" alt=Crystal Bloom" />
+  <h3>Crystal Bloom</h3>
+  <p>₦22,200</p>
+</div>
+<div class="feature-card" onclick="openForm('Golden Echo', '₦21,400')">
+  <img src="perfume 194.jpeg" alt="Golden Echo" />
+  <h3>Golden Echo</h3>
+  <p>₦21,400</p>
+</div>
+<div class="feature-card" onclick="openForm('Dawn Blush', '₦20,200')">
+  <img src="perfume 195.jpeg" alt="Dawn Blush" />
+  <h3>Dawn Blush</h3>
+  <p>₦20,200</p>
+</div>
+<div class="feature-card" onclick="openForm('Rose Ice', '₦21,300')">
+  <img src="perfume 196.jpeg" alt="Rose Ice" />
+  <h3>Rose Ice</h3>
+  <p>₦21,300</p>
+</div>
+<div class="feature-card" onclick="openForm('Cocoa Petal', '₦22,400')">
+  <img src="perfume 197.jpeg" alt="Cocoa Petal" />
+  <h3>Cocoa Petal</h3>
+  <p>₦22,400</p>
+</div>
+<div class="feature-card" onclick="openForm('Pink Shadow', '₦23,200')">
+  <img src="perfume 198.jpeg" alt="Pink Shadow" />
+  <h3>Pink Shadow</h3>
+  <p>₦23,200</p>
+</div>
+<div class="feature-card" onclick="openForm('Sun Bloom', '₦20,600')">
+  <img src="perfume 199.jpeg" alt="Sun Bloom" />
+  <h3>Sun Bloom</h3>
+  <p>₦20,600</p>
+</div>
+<div class="feature-card" onclick="openForm('Evening Drift', '₦21,800')">
+  <img src="perfume 200.jpeg" alt="Evening Drift" />
+  <h3>Evening Drift</h3>
+  <p>₦21,800</p>
+</div>
+    </div>
+
+</section>
+
+
+<!-- Pagination Controls -->
+<div class="pagination">
+  <button class="page-btn" onclick="changePage('prev')">&laquo; Prev</button>
+  <button class="page-btn" onclick="changePage(1)">1</button>
+  <button class="page-btn" onclick="changePage(2)">2</button>
+  <button class="page-btn" onclick="changePage(3)">3</button>
+  <button class="page-btn" onclick="changePage('next')">Next &raquo;</button>
+</div>
+
+<script>
+  let currentPage = 1;
+  const productsPerPage = 10;
+  const allProducts = Array.from(document.querySelectorAll(".feature-card"));
+
+  function showPage(page) {
+    currentPage = page;
+    const start = (page - 1) * productsPerPage;
+    const end = start + productsPerPage;
+    allProducts.forEach((card, index) => {
+      card.style.display = index >= start && index < end ? "block" : "none";
+    });
+  }
+
+  function changePage(action) {
+    if (action === 'prev' && currentPage > 1) {
+      showPage(currentPage - 1);
+    } else if (action === 'next' && currentPage < Math.ceil(allProducts.length / productsPerPage)) {
+      showPage(currentPage + 1);
+    } else if (typeof action === 'number') {
+      showPage(action);
+    }
+  }
+
+  showPage(1);
+</script>
+
+
+
+
+
+  <!-- Our Philosophy Heading -->
+<section style="text-align: center; padding-top: 2rem;">
+  <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--teal);">Our Philosophy</h2>
+</section>
+
+<!-- About Section -->
+<section id="about" class="features">
+  <div class="feature-card">
+    <h3>Crafting Essence, Cultivating Elegance</h3>
+    <p>
+      At Elegance Defined, we believe that scent is more than fragrance—it's identity. We are committed to capturing the rich, cultural elegance of Nigeria through perfumes that tell stories. Each bottle is a journey through carefully chosen ingredients, blended with mastery and passion. 
+      <br><br>
+      Our mission is to redefine African luxury through exceptional, long-lasting scents that embody class, confidence, and charm. Whether it’s for daily wear or a special occasion, our perfumes are made to elevate your presence and leave a lasting impression. 
+      <br><br>
+      We don’t just make perfumes—we bottle elegance.
+    </p>
+  </div>
+</section>
+
+
+  <!-- Customer Reviews -->
+<section style="text-align: center; padding-top: 2rem;">
+  <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--teal);">Customer Reviews</h2>
+</section>
+
+<section id="reviews" class="features">
+  <div class="feature-card">
+    <h3>Chinwe O.</h3>
+    <p>“Absolutely amazing! The scent lingers all day and I got so many compliments. I’m definitely buying again.”</p>
+  </div>
+  <div class="feature-card">
+    <h3>David K.</h3>
+    <p>“I didn’t expect this level of quality from a Nigerian brand. Elegant, long-lasting, and worth every kobo.”</p>
+  </div>
+  <div class="feature-card">
+    <h3>Zainab M.</h3>
+    <p>“The packaging alone blew me away, and the perfume? A 10/10. Smells luxurious and feels premium.”</p>
+  </div>
+</section>
+
+
+
+  <!-- Contact Us Heading -->
+<section style="text-align: center; padding-top: 2rem;">
+  <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--teal);">Contact Us</h2>
+</section>
+
+<!-- Contact Us Image -->
+<section style="text-align: center;">
+  <img src="contact us image.jfif" alt="Contact Us Banner" style="max-width: 100%; border-radius: 10px; margin-bottom: 2rem;">
+</section>
+
+<!-- Contact Info Box -->
+<section class="features">
+  <div class="feature-card">
+    <h3>We’d Love to Hear from You</h3>
+    <p>
+      Got questions, suggestions, or want to know more about our products? Reach out via phone, email, or social media. We're always here to help!
+    </p>
+    <p><strong>Phone:</strong> +234 807 121 6396</p>
+    <p><strong>Email:</strong> support@elegancedefined.ng</p>
+    <p><strong>Instagram:</strong> @elegancedefined</p>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer style="text-align: center; padding: 2rem; background: #022186; color: #fff;">
+  <p>&copy; 2025 Elegance Defined | Made in Nigeria</p>
+</footer>
+
+
+
+  <!-- Buy Now Form Modal -->
+  <div id="buyModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeForm()">&times;</span>
+      <h2 id="productTitle">Buy Now</h2>
+      <form action="buy.php" method="POST">
+        <input type="hidden" id="productName" name="product">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="text" name="contact" placeholder="Phone Number" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="address" placeholder="Delivery Address" required />
+        <select name="payment" required>
+          <option value="">Select Payment Method</option>
+          <option value="transfer">Bank Transfer</option>
+          <option value="pay_on_delivery">Pay on Delivery</option>
+        </select>
+        <button type="submit" class="toggle-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+
+    function openForm(product, price) {
+      document.getElementById("buyModal").style.display = "flex";
+      document.getElementById("productTitle").innerText = `Buy ${product} (${price})`;
+      document.getElementById("productName").value = product;
+    }
+
+    function closeForm() {
+      document.getElementById("buyModal").style.display = "none";
+    }
+
+    function animateLogo() {
+      const logo = document.getElementById("logo");
+      logo.style.transition = "transform 1s ease-in-out";
+      logo.style.transform = "scale(1.1)";
+      setTimeout(() => logo.style.transform = "scale(1)", 1000);
+    }
+  </script>
+</body>
+</html>
+
+
